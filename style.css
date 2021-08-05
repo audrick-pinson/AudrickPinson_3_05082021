@@ -7,6 +7,13 @@ h2{font-weight: bold;}
 
 body{margin: unset;}
 
+.town_position
+{
+	font-size: 20px;
+	display: flex;
+	align-items: baseline;
+}
+
 .reservation
 {
 	text-align: center;
@@ -38,8 +45,12 @@ button.button
 
 nav
 {
-	padding: 4em 3em 4em 3em;
+	padding: 4em 3em 7em 3em;
 	text-align: left;
+}
+nav h2
+{
+	font-size: 70px;
 }
 
 nav ul
@@ -51,11 +62,12 @@ nav li
 {
 	height: 58px;
 	font-weight: bold;
-	border-radius: 50px;
+	border-radius: 60px;
 	background-color: #F2F2F2;
 	list-style-type: none;
 	padding: 4em;
 	margin-bottom: 3em;
+	box-shadow: 5px 5px 30px grey;
 }
 
 nav i
@@ -72,6 +84,11 @@ nav i
 	align-items: center;
 	padding: 4em 3em 4em 3em;
 	background-color: #F2F2F2;
+}
+
+.restaurants h2
+{
+	font-size: 70px;
 }
 
 .cards
@@ -114,14 +131,31 @@ footer
 	padding: 2em;
 }
 
+.logo_de_fin
+{
+	padding-left: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
 footer img
 {
 	font-size: 13px;
+}
+
+footer i
+{
+	padding-right: 2em;
+}
+
+i.fas.fa-hands-helping
+{
+	font-size: 12px;
 }
 
 footer li
 {
 	color: white;
 	list-style-type: none;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 }
