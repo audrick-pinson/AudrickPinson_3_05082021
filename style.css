@@ -1,6 +1,6 @@
 *
 {
-	font-family: raleway, serif, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 h2{font-weight: bold;}
@@ -83,7 +83,7 @@ button.button
 
 nav
 {
-	font-size: 21px;
+	font-size: 20px;
 	padding: 4em 3em 4em 3em;
 	text-align: left;
 }
@@ -100,7 +100,7 @@ nav ul
 nav li
 {
 	height: 58px;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: bold;
 	border-radius: 47px;
 	background-color: #F2F2F2;
