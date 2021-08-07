@@ -9,7 +9,7 @@ body{margin: unset;}
 
 header
 {
-	background-color: grey;
+	background-color: rgb(234,234,234);
 }
 
 header img
@@ -42,7 +42,7 @@ i.fas.fa-map-marker-alt
 	font-size: 40px;
 	border: 0px;
 	padding: 0.5em 0em 0.5em 0em;
-	background-color: grey;
+	background-color: rgb(234,234,234);
 }
 
 .town_position input[value="Paris, Belleville "]
@@ -212,7 +212,7 @@ i.far.fa-heart:hover
 
 footer
 {
-	background-color: dimgrey;
+	background-color: rgb(53,53,53);
 	padding: 3em;
 }
 
