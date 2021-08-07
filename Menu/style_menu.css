@@ -1,0 +1,55 @@
+
+
+
+body
+{
+	margin: 0px;
+}
+
+button.button
+{
+	color: white;
+	font-size: 50px;
+	padding: 0.8em;
+	margin-bottom: 2em;
+	border: 0px;
+	border-radius: 70px;
+	background: linear-gradient(-7deg, #9356DC, #FF79DA);
+	box-shadow: 0px 0px 30px grey;
+}
+
+footer
+{
+	background-color: rgb(53,53,53);
+	padding: 3em;
+}
+
+.logo_de_fin
+{
+	padding-left: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+footer img
+{
+	font-size: 13px;
+	filter: invert(100%);
+}
+
+footer i
+{
+	padding-right: 2em;
+}
+
+i.fas.fa-hands-helping
+{
+	font-size: 12px;
+}
+
+footer li
+{
+	color: white;
+	list-style-type: none;
+	margin-bottom: 1em;
+}
