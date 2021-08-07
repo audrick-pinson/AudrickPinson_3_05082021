@@ -170,6 +170,18 @@ li.shop
 	object-position: center;
 }
 
+.cards span
+{
+	position: absolute;
+	left: 672px;
+	font-size: 47px;
+	font-weight: bold;
+	color: green;
+	background-color: #99E2D0;
+	margin-top: 0.8em;
+	border-radius: 8px;
+	padding: 0.3em 0.6em 0.3em 0.6em;
+}
 .cards a
 {
 	color: black;
