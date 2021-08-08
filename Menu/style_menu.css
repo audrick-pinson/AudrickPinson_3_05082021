@@ -6,7 +6,11 @@ body
 	margin: 0px;
 }
 
-header{display: block;}
+header
+{
+	display: block;
+	height: 700px;
+}
 
 header a
 {
@@ -39,7 +43,6 @@ header a img
 	background: #F2F2F2;
 	border-radius: 150px 150px 0px 0px;
 	position: relative;
-	bottom: 9em;
 }
 
 .carte h1
@@ -47,6 +50,12 @@ header a img
 	font-size: 80px;
 	display: flex;
 	justify-content: space-between;
+	align-items: baseline;
+}
+
+h1 strong
+{
+	font-family: 'Shrikhand', cursive;
 }
 
 i.far.fa-heart
@@ -54,12 +63,54 @@ i.far.fa-heart
 	padding-right: 0.5em;
 }
 
+article
+{
+	margin-bottom: 6em;
+}
+
+.carte h2
+{
+	font-weight: 300;
+	font-size: 34px;
+}
+
+.etiquette
+{
+	width: auto;
+	font-size: 14px;
+	background-color: white;
+	border-radius: 45px;
+	padding: 2em;
+	margin-bottom: 3em;
+}
+
+.etiquette p
+{
+	width: 100%;
+	margin: 0px;
+	font-size:16px;
+}
+
+.etiquette .accompagnement
+{
+	font-size: 14px;
+}
+
+span.prix
+{
+	font-size: 44px;
+	font-weight: bold;
+	float: right;
+	width: 12%;
+}
+
 button.button
 {
 	color: white;
-	font-size: 50px;
-	padding: 0.8em;
-	margin-bottom: 2em;
+	font-size: 53px;
+	padding: 0.8em 2em 0.8em 2em;
+	margin-left: 21%;
+	margin-bottom: 2.5em;
 	border: 0px;
 	border-radius: 70px;
 	background: linear-gradient(-7deg, #9356DC, #FF79DA);
