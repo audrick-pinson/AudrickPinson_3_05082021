@@ -29,6 +29,7 @@ header img
 	align-items: center;
 	padding-left: 15em;
 	padding-bottom: 1em;
+	padding-top: 0.5em;
 }
 
 i.fas.fa-map-marker-alt
@@ -178,7 +179,7 @@ li.shop
 .cards span
 {
 	position: absolute;
-	left: 663px;
+	left: 66%;
 	font-size: 47px;
 	font-weight: bold;
 	color: green;

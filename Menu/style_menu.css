@@ -126,6 +126,17 @@ span.check
 	display: none;
 }
 
+span.check:hover
+{
+	display: flex;
+	color: white;
+	font-size: 53px;
+	background-color: #99E2D0;
+	padding: 1.2em 1em 1.3em 1em;
+	border-radius: 0 px 30px 30px 0px;
+}
+
+
 button.button
 {
 	cursor: pointer;
