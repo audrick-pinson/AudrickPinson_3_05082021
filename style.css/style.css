@@ -9,10 +9,11 @@ body{margin: unset;}
 
 header
 {
+	text-align: center;
 	background-color: rgb(234,234,234);
 }
 
-header img
+header img[src="Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg"]
 {
 	width: 100%;
 	height: 76px;
@@ -27,7 +28,7 @@ header img
 	font-size: 20px;
 	display: inline-flex;
 	align-items: center;
-	padding-left: 15em;
+	padding-left: 10em;
 	padding-bottom: 1em;
 	padding-top: 0.5em;
 }
@@ -66,7 +67,7 @@ i.fas.fa-map-marker-alt
 
 .reservation P
 {
-	font-size: 33px;
+	font-size: 30px;
 	padding-bottom: 2em;
 }
 
@@ -160,11 +161,21 @@ li.shop
 
 .cards
 {
-	height: 673px;
+	height: 660px;
 	border-radius: 40px;
 	margin-bottom: 3em;
 	background-color: white;
 	box-shadow: 1px 1px 20px grey;
+}
+
+.cards a
+{
+	color: black;
+	font-size: 48px;
+	display: block;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
 }
 
 .cards img
@@ -184,19 +195,16 @@ li.shop
 	font-weight: bold;
 	color: green;
 	background-color: #99E2D0;
-	margin-top: 0.8em;
+	margin-top: -9.3em;
 	border-radius: 8px;
 	padding: 0.3em 0.6em 0.3em 0.6em;
 }
-.cards a
+
+.cards p
 {
-	color: black;
-	font-size: 48px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-decoration: none;
-	padding: 0em 1em 1em 1em;
+	display: inline-block;
+	width: 80%;
+	margin: 0.5em 0em 0em 1em;
 }
 
 .cards p strong
@@ -204,10 +212,24 @@ li.shop
 	font-weight: bold;
 }
 
+button.heart-button
+{
+	border: 0px;
+	background-color: white;
+}
+
 i.far.fa-heart
 {
 	font-size: 65px;
 }
+
+i.fas.fa-heart
+{
+	font-size: 65px;
+	color: #FF79DA;
+	display: none;
+}
+
 
 i.far.fa-heart:hover
 {
@@ -224,6 +246,7 @@ footer
 
 .logo_de_fin
 {
+	padding-left: 0em;
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
@@ -231,21 +254,14 @@ footer
 footer img
 {
 	font-size: 13px;
+	width: 35%;
 	filter: invert(100%);
 }
 
-footer ul
+footer .info
 {
-	padding-left: 0px;
+	width: 85%;
 }
-
-footer li
-{
-	color: white;
-	list-style-type: none;
-	margin-bottom: 1em;
-}
-
 
 footer i
 {
@@ -257,3 +273,32 @@ i.fas.fa-hands-helping
 	font-size: 12px;
 }
 
+footer ul
+{
+	padding-left: 0px;
+}
+
+footer li
+{
+	font-size: 43px;
+	color: white;
+	list-style-type: none;
+	margin-bottom: 0.5em;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: white;
+}
+
+i.fas.fa-utensils
+{
+	padding-right: 0.5em;
+}
+
+i.fas.fa-hands-helping
+{
+	font-size: 42px;
+	padding-right: 0.5em;
+}
