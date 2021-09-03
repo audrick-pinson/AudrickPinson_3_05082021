@@ -83,6 +83,12 @@ button.button
 	box-shadow: 0px 0px 30px grey;
 }
 
+button.button:hover
+{
+	box-shadow: 0px 0px 60px grey;
+	background: linear-gradient(-7deg, #9356DC, #FF9BFC);
+}
+
 nav
 {
 	display: block;
@@ -195,9 +201,14 @@ li.shop
 	font-weight: bold;
 	color: green;
 	background-color: #99E2D0;
-	margin-top: -9.3em;
+	margin-top: 0.7em;
 	border-radius: 8px;
 	padding: 0.3em 0.6em 0.3em 0.6em;
+}
+
+.contenant
+{
+	display: flex;
 }
 
 .cards p
@@ -214,6 +225,9 @@ li.shop
 
 button.heart-button
 {
+	cursor: pointer;
+	display: flex;
+	align-items: flex-end;
 	border: 0px;
 	background-color: white;
 }
@@ -221,21 +235,26 @@ button.heart-button
 i.far.fa-heart
 {
 	font-size: 65px;
+	position: absolute;
+	color: black;
 }
 
 i.fas.fa-heart
 {
 	font-size: 65px;
-	color: #FF79DA;
-	display: none;
+	color: white;
+	opacity: 0;
+	transform: scale(1.0);
+	transform: all 400ms;
 }
 
 
-i.far.fa-heart:hover
+i.fas.fa-heart:active
 {
-	cursor: pointer;
 	border: 0px;
-	color: #9356DC;
+	opacity: 1;
+	color: #FF79DA;
+	transform: scale(1.15);
 }
 
 footer
