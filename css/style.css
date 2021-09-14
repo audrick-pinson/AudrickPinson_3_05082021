@@ -103,7 +103,7 @@ body{	margin: unset;}
 	font-size: 60px;
 	color: transparent;
 	animation-name: text-chargement;
-	animation-duration: 1000ms;
+	animation-duration: 2500ms;
 	animation-fill-mode: forward
 }
 
@@ -364,7 +364,7 @@ i.fas.fa-heart
 	color: white;
 	opacity: 0;
 	transform: scale(0.5);
-	transition: all 5000ms;
+	transition: all 2500ms;
 }
 
 
