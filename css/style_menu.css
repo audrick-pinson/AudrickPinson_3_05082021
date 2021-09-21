@@ -45,7 +45,7 @@ header a img
 @keyframes background{
 	0%{
 		transform: translateY(-40%);
-		opacity: 0.1;
+		opacity: 0;
 	}
 	100%{
 		transform: translateY(0%);
@@ -158,6 +158,50 @@ article
 	background-color: white;
 	border-radius: 35px;
 	margin-bottom: 6em;
+	opacity: 0;
+	animation-name: etiquette;
+	animation-duration: 5000ms;
+	animation-fill-mode: forwards;
+}
+
+.etiquette:nth-child(1)
+{
+	animation-delay: 1000ms;
+}
+
+.etiquette:nth-child(2)
+{
+	animation-delay: 1250ms;
+}
+
+.etiquette:nth-child(3)
+{
+	animation-delay: 1500ms;
+}
+
+.etiquette:nth-child(4)
+{
+	animation-delay: 1750ms;
+}
+
+
+
+@keyframes etiquette{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	70%{
+		opacity: 0.6;
+	}
+	80%{
+		opacity: 0.8;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 .etiquette p
@@ -196,14 +240,11 @@ span.check
 	background: #99E2D0;
 	height: 10vh;
 	border-radius: 0px 20px 20px 0px;
-	transform: scaleX(0);
-	transition: transform 1s;
 }
 
 span.check:hover
 {
 	width: 25%;
-	transform: scaleX(1);
 }
 
 i.fas.fa-check-circle.fa\.color
