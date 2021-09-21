@@ -242,7 +242,7 @@ span.check
 	border-radius: 0px 20px 20px 0px;
 }
 
-span.check:hover
+.etiquette:hover >span.check
 {
 	width: 25%;
 }
