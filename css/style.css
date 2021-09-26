@@ -19,7 +19,7 @@ body{	margin: unset;}
 	text-align: center;
 	animation-name: page-chargement;
 	animation-duration: 5000ms;
-	animation-fill-mode: forward;
+	animation-fill-mode: forwards;
 }
 
 @keyframes page-chargement{
@@ -48,7 +48,7 @@ body{	margin: unset;}
 	animation-name: circle-loader;
 	animation-duration: 2500ms;
 	animation-timing-function: ease;
-	animation-fill-mode: forward;
+	animation-fill-mode: forwards;
 }
 
 @keyframes circle-loader{
@@ -81,7 +81,7 @@ body{	margin: unset;}
 	padding: 50%;
 	animation-name: page-chargement;
 	animation-duration: 4000ms;
-	animation-fill-mode: forward;
+	animation-fill-mode: forwards;
 }
 
 @keyframes circle{
@@ -104,7 +104,7 @@ body{	margin: unset;}
 	color: transparent;
 	animation-name: text-chargement;
 	animation-duration: 3000ms;
-	animation-fill-mode: forward
+	animation-fill-mode: forwards;
 }
 
 @keyframes text-chargement{
@@ -342,11 +342,12 @@ li.shop
 	font-weight: bold;
 }
 
-button.heart-button
+.heart-button
 {
 	cursor: pointer;
 	display: flex;
-	align-items: flex-end;
+	justify-content: center;
+	align-items: end;
 	border: 0px;
 	background-color: white;
 }

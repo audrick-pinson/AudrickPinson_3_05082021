@@ -237,36 +237,46 @@ span.prix
 span.check
 {
 	width: 0%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: #99E2D0;
 	height: 10vh;
 	border-radius: 0px 20px 20px 0px;
 }
 
-.etiquette:hover >span.check
+.etiquette:hover > span.check,.etiquette:focus > span.check
 {
 	width: 25%;
 }
+
+.etiquette > span.check
+{
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+}
+
 
 i.fas.fa-check-circle.fa\.color
 {
 	font-size: 56px;
 	color: white;
-	padding: 1.2em 1em 0.5em;
-	left: 730px;
-	position: fixed;
 	opacity: 0;
 	transform: rotate(0);
 	transition-property: transform;
 	transition-duration: 0.2s;
 	transition-timing-function: ease-in-out;
 }
-
-i.fas.fa-check-circle.fa\.color:hover
+.etiquette:hover > span.check i,.etiquette:focus > span.check i
 {
 	position: initial;
 	opacity: 1;
-	transform-origin: 50% 50%;
+	transform-origin: center;
 	transform: rotate(360deg);
+	transition-property: transform;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
 }
 
 button.button
