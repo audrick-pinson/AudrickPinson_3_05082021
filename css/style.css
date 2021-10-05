@@ -268,6 +268,7 @@ li.shop
 	background-color: rgb(245,235,245);
 }
 
+
 .restaurants
 {
 	width: auto;
@@ -359,10 +360,11 @@ i.far.fa-heart
 	color: #FF79DA;
 }
 
+
 i.fas.fa-heart
 {
 	font-size: 65px;
-	color: white;
+	color: #9356DC;
 	opacity: 0;
 	transform: scale(0.5);
 	transition: all 2500ms;
@@ -440,4 +442,205 @@ i.fas.fa-hands-helping
 {
 	font-size: 42px;
 	padding-right: 0.5em;
+}
+
+@media screen and (min-width: 1230px)
+{
+
+		body
+		{
+			width: 70%;
+			margin: auto;
+			background-image: url(maquettes_ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+		}
+
+		.circle-loader
+		{
+			height: 100px;
+			margin: 15% 30%;
+		}
+
+		text-chargement {
+    bottom: 53PX;
+    font-size: 123px;
+    COLOR: GREEN;
+}
+
+		header img[src="maquettes_ohmyfood/images/logo/ohmyfood@2x.svg"]
+		{
+			height: 65px;
+			padding-top: 1em;
+			padding-bottom: 1em;
+}
+
+		i.fas.fa-map-marker-alt
+		{
+			font-size: 30px;
+}
+
+		.town_position input[value="Paris, Belleville "]
+		{
+			font-size: 30px;
+		}
+
+		.town_position
+		{
+			font-size: 13px;
+			padding-bottom: 0px;
+		}
+
+		.reservation
+		{
+			padding: 1em;
+		}
+
+		.reservation h1
+		{
+			font-size: 49px;
+			margin: 0em;
+		}
+
+		.reservation P
+		{
+			font-size: 16px;
+			padding-bottom: 1em;
+		}
+
+		button.button
+		{
+			font-size: 19px;
+			margin-bottom: 1em;
+		}
+
+		nav
+		{
+			background-color: white;
+			padding: 1em 3em 1em 1em;
+			border-radius: 0px 0px 60px 60px;
+		}
+
+		nav h2#fonctionnement
+		{
+			border-radius: 0px;
+			font-size: 30px;
+			color: black;
+			background-color: white;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		nav ul
+		{
+			display: flex;
+			justify-content: space-around;
+		}
+
+		nav li
+		{
+			font-size: 13px;
+			padding: 0em 1em;
+			margin-top: 1em;
+			margin-bottom: 0px;
+		}
+
+		nav span
+		{
+			font-size: 15px;
+		}
+
+		.restaurants
+		{
+			display: flex;
+			justify-content: space-evenly;
+			padding: 1em 0em 1em 0em;
+			border-radius: 0px 0px 51px 51px;
+}
+
+		}
+
+		section
+		{
+			margin-bottom: 0.5em;
+		}
+
+		h2
+		{
+			font-weight: bold;
+			color: white;
+			padding-left: 2em;
+			background-color: #99E2D0;
+			margin-bottom: 0em;
+			padding: 0.5em 0em 0.5em 1em;
+			margin-top: 0.5em;
+			border-radius: 60px 60px 0px 0px;
+		}
+
+		.cards
+		{
+			width: 45%;
+			height: 338px;
+			margin-bottom: 1em;
+			margin-top: 1em;
+		}
+
+		.cards img
+		{
+			height: 220px;
+		}
+
+		.cards span
+		{
+			font-size: 25px;
+			left: 75%;
+		}
+
+		.contenant
+		{
+			display: flex;
+			font-size: 23px;
+			flex-wrap: nowrap;
+			justify-content: space-evenly;
+		}
+
+		.heart-button
+		{
+			margin-right: 1em;
+		}
+
+		i.far.fa-heart
+		{
+			font-size: 38px;
+		}
+
+		i.fas.fa-heart
+		{
+			font-size: 38px;
+		}
+
+		footer
+		{
+			padding: 2em 2em 1em 2em;
+			border-radius: 60px 60px 0px 0px;
+		}
+
+		.logo_de_fin
+		{
+			margin-top: 0em;
+		}
+
+		footer img
+		{
+			width: 25%;
+		}
+
+		footer li
+		{
+			font-size: 21px;
+		}
+
+		i.fas.fa-hands-helping
+		{
+			font-size: 20px;
+		}
+
 }

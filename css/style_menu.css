@@ -149,6 +149,7 @@ article
 .etiquette
 {
 	cursor: pointer;
+	height: 163px;
 	width: auto;
 	text-align: initial;
 	display: flex;
@@ -171,17 +172,17 @@ article
 
 .etiquette:nth-child(2)
 {
-	animation-delay: 1250ms;
+	animation-delay: 2000ms;
 }
 
 .etiquette:nth-child(3)
 {
-	animation-delay: 1500ms;
+	animation-delay: 3000ms;
 }
 
 .etiquette:nth-child(4)
 {
-	animation-delay: 1750ms;
+	animation-delay: 4000ms;
 }
 
 
@@ -237,12 +238,12 @@ span.prix
 span.check
 {
 	width: 0%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: #99E2D0;
-	height: 10vh;
-	border-radius: 0px 20px 20px 0px;
+	border-radius: 0px 35px 35px 0px;
 }
 
 .etiquette:hover > span.check,.etiquette:focus > span.check
@@ -253,7 +254,7 @@ span.check
 .etiquette > span.check
 {
 	transition-property: all;
-	transition-duration: 1s;
+	transition-duration: 0.2s;
 	transition-timing-function: ease-in-out;
 }
 
@@ -265,7 +266,7 @@ i.fas.fa-check-circle.fa\.color
 	opacity: 0;
 	transform: rotate(0);
 	transition-property: transform;
-	transition-duration: 0.2s;
+	transition-duration: 1.5s;
 	transition-timing-function: ease-in-out;
 }
 .etiquette:hover > span.check i,.etiquette:focus > span.check i
@@ -294,3 +295,102 @@ button.button
 	box-shadow: 0px 0px 30px grey;
 }
 
+
+
+@media screen and (min-width: 1230px)
+{
+
+				body
+		{
+			width: 70%;
+			margin: auto;
+			background-color: white;
+		}
+
+		header
+		{
+			height: 450px;
+		}
+
+		header a
+		{
+			padding: 1em 1em 1em 1em;
+		}
+
+		i.fas.fa-arrow-left
+		{
+			padding-right: 32%;
+		}
+
+		header a img
+		{
+			height: 50px;
+		}
+
+		.background img
+		{
+			width: 100%;
+			object-fit: cover;
+			object-position: center;
+			height: 500px;
+		}
+
+		.carte
+		{
+			border-radius: 150px 150px 150px 150px;
+		}
+
+		.carte h1
+		{
+			font-size: 38px;
+		}
+
+		.carte h2
+		{
+			font-size: 20px;
+			width: 100%;
+		}
+
+		article
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			margin-bottom: 1em;
+		}
+
+		.all
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.etiquette
+		{
+			width: 48%;
+			height: 120px;
+		}
+
+		.etiquette strong
+		{
+			font-size: 30px;
+		}
+
+		.etiquette .accompagnement
+		{
+			font-size: 20px;
+		}
+
+		span.prix
+		{
+			font-size: 34px;
+		}
+
+		button.button
+		{
+			font-size: 30px;
+			margin-bottom: 0em;
+		}
+
+}
