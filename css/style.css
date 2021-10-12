@@ -12,13 +12,14 @@ body{	margin: unset;}
 
 	height: 100%;
 	width: 100%;
+	text-align: center;
 	background-color: transparent;
 	position: fixed;
 	visibility: hidden;
 	opacity: 0.8;
 	text-align: center;
 	animation-name: page-chargement;
-	animation-duration: 5000ms;
+	animation-duration: 3000ms;
 	animation-fill-mode: forwards;
 }
 
@@ -39,14 +40,14 @@ body{	margin: unset;}
 
 .circle-loader
 {
-	height: 100px;
 	width: 100px;
-	margin: 50% 40%;
+	margin: 30% 45%;
+	margin-bottom: 2em;
 	background: transparent;
 	border-radius: 50%;
-	padding: 79px;
+	padding: 10px;
 	animation-name: circle-loader;
-	animation-duration: 2500ms;
+	animation-duration: 1500ms;
 	animation-timing-function: ease;
 	animation-fill-mode: forwards;
 }
@@ -55,11 +56,20 @@ body{	margin: unset;}
 0%{
 	background: linear-gradient(45deg, #9356DC, #FF79DA);
 }
+13%{
+	background: linear-gradient(67deg, #9356DC, #FF79DA);
+}
 25%{
 	background: linear-gradient(90deg, #9356DC, #FF79DA);
 }
+37%{
+	background: linear-gradient(113deg, #9356DC, #FF79DA);
+}
 50%{
 	background: linear-gradient(180deg, #9356DC, #FF79DA);
+}
+62%{
+	background: linear-gradient(203deg, #9356DC, #FF79DA);
 }
 75%{
 	background: linear-gradient(270deg, #9356DC, #FF79DA);
@@ -80,7 +90,7 @@ body{	margin: unset;}
 	border-radius: 50%;
 	padding: 50%;
 	animation-name: page-chargement;
-	animation-duration: 4000ms;
+	animation-duration: 2500ms;
 	animation-fill-mode: forwards;
 }
 
@@ -101,9 +111,10 @@ body{	margin: unset;}
 {
 	font-family: 'Shrikhand', cursive;
 	font-size: 60px;
+	width: 100%;
 	color: transparent;
 	animation-name: text-chargement;
-	animation-duration: 3000ms;
+	animation-duration: 1500ms;
 	animation-fill-mode: forwards;
 }
 
@@ -111,14 +122,23 @@ body{	margin: unset;}
 	0%{
 		color: transparent;
 	}
-		25%{
-		color: grey;
+	12%{
+		color: black;
+		opacity: 0.3;
+	}
+		30%{
+		opacity: 1;
 	}
 	50%{
+		opacity: 1;
 		color: black;
 	}
 		90%{
-		color: grey;
+		opacity: 0.7;
+		color: black;
+	}
+	95%{
+		opacity: 0.4;
 	}
 	100%{
 		color: transparent;
@@ -360,6 +380,49 @@ i.far.fa-heart
 	color: #FF79DA;
 }
 
+i.far.fa-heart:hover
+{
+	background: -webkit-linear-gradient(180deg, #FF79DA 0%, #9356DC 300%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes{
+	9%{
+		background: -webkit-linear-gradient(180deg, #FF79DA 0%, #9356DC 288%);
+	}
+	18%{
+		background: -webkit-linear-gradient(180deg, #FF79DA 0%, #9356DC 196%);
+	}
+	27%{
+		background: -webkit-linear-gradient(217deg, #FF79DA 0%, #9356DC 134%);
+	}
+	36%{
+		background: -webkit-linear-gradient(243deg, #FF79DA 0%, #9356DC 103%);
+	}
+	45%{
+		background: -webkit-linear-gradient(267deg, #FF79DA 0%, #9356DC 66%);
+	}
+	54%{
+		background: -webkit-linear-gradient(267deg, #FF79DA 0%, #9356DC 55%);
+	}
+	63%{
+		background: -webkit-linear-gradient(286deg, #FF79DA 0%, #9356DC 37%);
+	}
+	72%{
+		background: -webkit-linear-gradient(298deg, #FF79DA 0%, #9356DC 37%);
+	}
+	81%{
+		background: -webkit-linear-gradient(298deg, #FF79DA 0%, #9356DC 29%);
+	}
+	90%{
+		background: -webkit-linear-gradient(300deg, #FF79DA 0%, #9356DC 29%);
+	}
+	100%{
+		background: -webkit-linear-gradient(380deg, #FF79DA 0%, #9356DC 10%);
+		visibility: hidden ;
+	}
+}
 
 i.fas.fa-heart
 {
@@ -456,15 +519,14 @@ i.fas.fa-hands-helping
 
 		.circle-loader
 		{
-			height: 100px;
-			margin: 15% 30%;
+			margin: 14% 32%;
+			text-align: center;
 		}
 
-		text-chargement {
-    bottom: 53PX;
-    font-size: 123px;
-    COLOR: GREEN;
-}
+		.text-chargement
+		{
+			width: 70%;
+		}
 
 		header img[src="maquettes_ohmyfood/images/logo/ohmyfood@2x.svg"]
 		{
@@ -554,8 +616,6 @@ i.fas.fa-hands-helping
 			justify-content: space-evenly;
 			padding: 1em 0em 1em 0em;
 			border-radius: 0px 0px 51px 51px;
-}
-
 		}
 
 		section
@@ -583,6 +643,13 @@ i.fas.fa-hands-helping
 			margin-top: 1em;
 		}
 
+		.img-new
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
+
 		.cards img
 		{
 			height: 220px;
@@ -591,7 +658,8 @@ i.fas.fa-hands-helping
 		.cards span
 		{
 			font-size: 25px;
-			left: 75%;
+			left: inherit;
+			margin-right: 1em;
 		}
 
 		.contenant

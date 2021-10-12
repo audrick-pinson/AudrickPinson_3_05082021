@@ -267,6 +267,7 @@ i.fas.fa-check-circle.fa\.color
 	transform: rotate(0);
 	transition-property: transform;
 	transition-duration: 1.5s;
+	transition-delay: 0.3s;
 	transition-timing-function: ease-in-out;
 }
 .etiquette:hover > span.check i,.etiquette:focus > span.check i
@@ -353,9 +354,6 @@ button.button
 
 		article
 		{
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
 			margin-bottom: 1em;
 		}
 
@@ -372,14 +370,19 @@ button.button
 			height: 120px;
 		}
 
+		.etiquette p
+		{
+			margin: 1em 1em 2em 2em;
+		}
+
 		.etiquette strong
 		{
-			font-size: 30px;
+			font-size: 22px;
 		}
 
 		.etiquette .accompagnement
 		{
-			font-size: 20px;
+			font-size: 15px;
 		}
 
 		span.prix
