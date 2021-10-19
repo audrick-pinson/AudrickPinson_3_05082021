@@ -3,7 +3,11 @@
 	font-family: 'Roboto', sans-serif;
 }
 
-h2{font-weight: bold;}
+h2
+{
+	font-weight: bold;
+	font-size: 20px;
+}
 
 body{	margin: unset;}
 
@@ -13,10 +17,10 @@ body{	margin: unset;}
 	height: 100%;
 	width: 100%;
 	text-align: center;
-	background-color: transparent;
+	background-color: #F2F2F2;
 	position: fixed;
 	visibility: hidden;
-	opacity: 0.8;
+	opacity: 1;
 	text-align: center;
 	animation-name: page-chargement;
 	animation-duration: 3000ms;
@@ -26,13 +30,17 @@ body{	margin: unset;}
 @keyframes page-chargement{
 	0%{
 		background-color: transparent;
+		opacity: 1;
 		visibility: inherit;
 	}
 	50%{
 		background-color: #F2F2F2;
+		opacity: 1;
+		visibility: inherit;
 	}
 	100%{
 		background-color: transparent;
+		opacity: 0;
 		visibility: hidden;
 	}
 }
@@ -41,7 +49,7 @@ body{	margin: unset;}
 .circle-loader
 {
 	width: 100px;
-	margin: 30% 45%;
+	margin: 15% auto;
 	margin-bottom: 2em;
 	background: transparent;
 	border-radius: 50%;
@@ -110,7 +118,7 @@ body{	margin: unset;}
 .text-chargement
 {
 	font-family: 'Shrikhand', cursive;
-	font-size: 60px;
+	font-size: 20px;
 	width: 100%;
 	color: transparent;
 	animation-name: text-chargement;
@@ -155,32 +163,36 @@ header
 header img[src="maquettes_ohmyfood/images/logo/ohmyfood@2x.svg"]
 {
 	width: 100%;
-	height: 76px;
+	height: 34px;
+	font-size: 9px;
 	background-color: white;
-	padding-top: 3em;
-	padding-bottom: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	box-shadow: 0px 0px 10px black;
+}
+
+.logo
+{
+	margin-bottom: 0.3em;
 }
 
 .town_position
 {
-	font-size: 20px;
+	font-size: 0px;
 	display: inline-flex;
 	align-items: center;
-	padding-left: 10em;
 	padding-bottom: 1em;
 	padding-top: 0.5em;
 }
 
 i.fas.fa-map-marker-alt
 {
-	font-size: 50px;
-	padding-right: 0.5em;
+	font-size: 20px;
+	padding-left: 3.5em;
 }
 
 .town_position input[type="search"]
 {
-	font-size: 40px;
 	border: 0px;
 	padding: 0.5em 0em 0.5em 0em;
 	background-color: rgb(234,234,234);
@@ -188,32 +200,32 @@ i.fas.fa-map-marker-alt
 
 .town_position input[value="Paris, Belleville "]
 {
-	font-size: 45px;
+	font-size: 17px;
 	font-weight: bold;
 }
 
 .reservation
 {
 	text-align: center;
-	padding: 4em;
+	padding: 1em;
 	background-color: #F2F2F2;
 }
 
 .reservation h1
 {
-	font-size: 76px;
+	font-size: 25px;
 }
 
 .reservation P
 {
-	font-size: 30px;
+	font-size: 14px;
 	padding-bottom: 2em;
 }
 
 button.button
 {
 	color: white;
-	font-size: 50px;
+	font-size: 15px;
 	padding: 0.8em;
 	margin-bottom: 2em;
 	border: 0px;
@@ -232,12 +244,12 @@ nav
 {
 	display: block;
 	font-size: 20px;
-	padding: 4em 3em 4em 3em;
+	padding: 2em 1em 2em 1em;
 	text-align: left;
 }
 nav h2
 {
-	font-size: 50px;
+	font-size: 20px;
 }
 
 nav ul
@@ -249,27 +261,27 @@ nav ul
 nav li
 {
 	height: 34px;
-	font-size: 42px;
+	font-size: 13px;
 	font-weight: bold;
 	display: flex;
 	align-items: center;
 	border-radius: 47px;
 	background-color: #F2F2F2;
 	list-style-type: none;
-	padding: 1.5em;
+	padding: 0.5em;
 	margin-bottom: 2em;
 	box-shadow: 5px 5px 30px grey;
 }
 
 nav span
 {
-	font-size: 27px;
+	font-size: 12px;
 	color: white;
 	background-color: #9356DC;
 	border-radius: 50px 50px;
 	padding: 0.4em 0.7em 0.4em 0.7em;
 	margin-right: 1.5em;
-	margin-left: -3em;
+	margin-left: -1em;
 }
 
 nav i
@@ -288,6 +300,14 @@ li.shop
 	background-color: rgb(245,235,245);
 }
 
+#titre-restaurant
+{
+	padding-top: 1em;
+	padding-left: 1em;
+	margin-bottom: 0em;
+	background-color: #F2F2F2;
+}
+
 
 .restaurants
 {
@@ -296,7 +316,7 @@ li.shop
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
-	padding: 4em 3em 4em 3em;
+	padding: 1em 1em 1em 1em;
 	background-color: #F2F2F2;
 }
 
@@ -307,9 +327,9 @@ li.shop
 
 .cards
 {
-	height: 660px;
-	border-radius: 40px;
-	margin-bottom: 3em;
+	height: 245px;
+	border-radius: 23px;
+	margin-bottom: 1em;
 	background-color: white;
 	box-shadow: 1px 1px 20px grey;
 }
@@ -317,7 +337,7 @@ li.shop
 .cards a
 {
 	color: black;
-	font-size: 48px;
+	font-size: 17px;
 	display: block;
 	justify-content: space-between;
 	align-items: center;
@@ -327,8 +347,8 @@ li.shop
 .cards img
 {
 	width: 100%;
-	height: 465px;
-	border-radius: 40px 40px 0px 0px;
+	height: 170px;
+	border-radius: 20px 20px 0px 0px;
 	object-fit: cover;
 	object-position: center;
 }
@@ -337,7 +357,7 @@ li.shop
 {
 	position: absolute;
 	left: 66%;
-	font-size: 47px;
+	font-size: 17px;
 	font-weight: bold;
 	color: green;
 	background-color: #99E2D0;
@@ -349,6 +369,7 @@ li.shop
 .contenant
 {
 	display: flex;
+	justify-content: space-between;
 }
 
 .cards p
@@ -371,11 +392,12 @@ li.shop
 	align-items: end;
 	border: 0px;
 	background-color: white;
+	margin-right: 1em;
 }
 
 i.far.fa-heart
 {
-	font-size: 65px;
+	font-size: 30px;
 	position: absolute;
 	color: #FF79DA;
 }
@@ -385,9 +407,12 @@ i.far.fa-heart:hover
 	background: -webkit-linear-gradient(180deg, #FF79DA 0%, #9356DC 300%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	animation-name: heart-gradient;
+	animation-duration: 1500ms;
+	animation-fill-mode: forwards;
 }
 
-@keyframes{
+@keyframes heart-gradient{
 	9%{
 		background: -webkit-linear-gradient(180deg, #FF79DA 0%, #9356DC 288%);
 	}
@@ -426,7 +451,7 @@ i.far.fa-heart:hover
 
 i.fas.fa-heart
 {
-	font-size: 65px;
+	font-size: 30px;
 	color: #9356DC;
 	opacity: 0;
 	transform: scale(0.5);
@@ -445,14 +470,14 @@ i.fas.fa-heart:active,i.fas.fa-heart:hover
 footer
 {
 	background-color: rgb(53,53,53);
-	padding: 3em;
+	padding: 1em;
 }
 
 .logo_de_fin
 {
 	padding-left: 0em;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 footer img
@@ -474,7 +499,7 @@ footer i
 
 i.fas.fa-hands-helping
 {
-	font-size: 12px;
+	font-size: 17px;
 }
 
 footer ul
@@ -484,7 +509,7 @@ footer ul
 
 footer li
 {
-	font-size: 43px;
+	font-size: 17px;
 	color: white;
 	list-style-type: none;
 	margin-bottom: 0.5em;
@@ -503,7 +528,7 @@ i.fas.fa-utensils
 
 i.fas.fa-hands-helping
 {
-	font-size: 42px;
+	font-size: 17px;
 	padding-right: 0.5em;
 }
 
