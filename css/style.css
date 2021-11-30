@@ -13,7 +13,7 @@ body{	margin: unset;}
 
 .page-chargement
 {
-
+	z-index: 10000;
 	height: 100%;
 	width: 100%;
 	text-align: center;
@@ -193,6 +193,7 @@ i.fas.fa-map-marker-alt
 
 .town_position input[type="search"]
 {
+	width: 90%;
 	border: 0px;
 	padding: 0.5em 0em 0.5em 0em;
 	background-color: rgb(234,234,234);
@@ -327,7 +328,7 @@ li.shop
 
 .cards
 {
-	height: 245px;
+	height: 208px;
 	border-radius: 23px;
 	margin-bottom: 1em;
 	background-color: white;
@@ -344,24 +345,30 @@ li.shop
 	text-decoration: none;
 }
 
+.img-new
+{
+	display: flex;
+}
+
 .cards img
 {
 	width: 100%;
-	height: 170px;
+	height: 140px;
 	border-radius: 20px 20px 0px 0px;
 	object-fit: cover;
 	object-position: center;
 }
 
-.cards span
+.img-new span
 {
 	position: absolute;
-	left: 66%;
+	right: 3%;
 	font-size: 17px;
 	font-weight: bold;
 	color: green;
 	background-color: #99E2D0;
-	margin-top: 0.7em;
+	margin-top: 1em;
+	margin-right: 1.5em;
 	border-radius: 8px;
 	padding: 0.3em 0.6em 0.3em 0.6em;
 }
@@ -404,7 +411,7 @@ i.far.fa-heart
 
 i.far.fa-heart:hover
 {
-	background: -webkit-linear-gradient(180deg, #FF79DA 0%, #9356DC 300%);
+	background: -webkit-linear-gradient(to right, #FF79DA, #9356DC);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation-name: heart-gradient;
@@ -413,38 +420,11 @@ i.far.fa-heart:hover
 }
 
 @keyframes heart-gradient{
-	9%{
-		background: -webkit-linear-gradient(180deg, #FF79DA 0%, #9356DC 288%);
-	}
-	18%{
-		background: -webkit-linear-gradient(180deg, #FF79DA 0%, #9356DC 196%);
-	}
-	27%{
-		background: -webkit-linear-gradient(217deg, #FF79DA 0%, #9356DC 134%);
-	}
-	36%{
-		background: -webkit-linear-gradient(243deg, #FF79DA 0%, #9356DC 103%);
-	}
-	45%{
-		background: -webkit-linear-gradient(267deg, #FF79DA 0%, #9356DC 66%);
-	}
-	54%{
-		background: -webkit-linear-gradient(267deg, #FF79DA 0%, #9356DC 55%);
-	}
-	63%{
-		background: -webkit-linear-gradient(286deg, #FF79DA 0%, #9356DC 37%);
-	}
-	72%{
-		background: -webkit-linear-gradient(298deg, #FF79DA 0%, #9356DC 37%);
-	}
-	81%{
-		background: -webkit-linear-gradient(298deg, #FF79DA 0%, #9356DC 29%);
-	}
-	90%{
-		background: -webkit-linear-gradient(300deg, #FF79DA 0%, #9356DC 29%);
+	2%{
+		background: -webkit-linear-gradient(to right, #9356DC, #FF79DA);
 	}
 	100%{
-		background: -webkit-linear-gradient(380deg, #FF79DA 0%, #9356DC 10%);
+		background: -webkit-linear-gradient(to right, #FF79DA, #9356DC);
 		visibility: hidden ;
 	}
 }
@@ -648,7 +628,7 @@ i.fas.fa-hands-helping
 			margin-bottom: 0.5em;
 		}
 
-		h2
+		#titre-restaurant
 		{
 			font-weight: bold;
 			color: white;
@@ -663,7 +643,7 @@ i.fas.fa-hands-helping
 		.cards
 		{
 			width: 45%;
-			height: 338px;
+			height: 314px;
 			margin-bottom: 1em;
 			margin-top: 1em;
 		}
@@ -680,11 +660,11 @@ i.fas.fa-hands-helping
 			height: 220px;
 		}
 
-		.cards span
+		.img-new span
 		{
 			font-size: 25px;
-			left: inherit;
-			margin-right: 1em;
+			right: inherit;
+			margin-right: 1.5%;
 		}
 
 		.contenant
